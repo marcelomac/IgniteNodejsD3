@@ -1,0 +1,33 @@
+@hostname = http://localhost:3333
+
+POST {{hostname}}/repositories
+content-type: application/json
+
+{
+	"title": "Umbriel",
+	"techs": ["React", "ReactNative", "TypeScript", "ContextApi"],
+	"url": "https://github.com/Rocketseat/umbriel",
+	"likes": 1
+}
+
+###
+
+GET {{hostname}}/repositories
+
+###
+POST {{hostname}}/repositories/7925a166-4c42-44c3-8e5b-56a9b0119955/like
+content-type: application/json
+
+###
+
+DELETE {{hostname}}/repositories
+
+###
+
+put {{hostname}}/repositories/29e63d84-b89d-4f49-8365-347df39d3ab7 
+content-type: application/json
+
+{
+	"title": "Umbriel 2",
+	"techs": ["React 2", "ReactNative 2", "TypeScript 2", "ContextApi 2"]
+}
