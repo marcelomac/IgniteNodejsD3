@@ -1,5 +1,6 @@
 @hostname = http://localhost:3333
 
+###########################################
 POST {{hostname}}/repositories
 content-type: application/json
 
@@ -10,24 +11,29 @@ content-type: application/json
 	"likes": 1
 }
 
-###
+###########################################
 
 GET {{hostname}}/repositories
 
-###
-POST {{hostname}}/repositories/7925a166-4c42-44c3-8e5b-56a9b0119955/like
+###########################################
+// POST LIKES
+POST {{hostname}}/repositories/6f171c23-aa7e-4ca7-9c8c-405a986d8708/like
 content-type: application/json
 
-###
+###########################################
 
 DELETE {{hostname}}/repositories
 
-###
+###########################################
 
-put {{hostname}}/repositories/29e63d84-b89d-4f49-8365-347df39d3ab7 
+put {{hostname}}/repositories/377a8466-d9bd-4f57-b0f9-532f430f6037
 content-type: application/json
 
 {
 	"title": "Umbriel 2",
-	"techs": ["React 2", "ReactNative 2", "TypeScript 2", "ContextApi 2"]
+	"techs": ["React 2", "ReactNative 2", "TypeScript 2", "ContextApi 2"],
+	"likes": 5
+
 }
+
+###########################################
